@@ -1,0 +1,58 @@
+Команды:
+Сперва убедится что гит установлен на этом компьютере
+Инициализировать гит для проэкта:
+git init
+
+Инициализируем пользователя и email:
+git config --global user.name "sitesoft1"
+
+git config --global user.email "sitesoft1@gmail.com"
+
+Смотрим какие файлы гит отслеживает дял проэкта:
+git status
+
+Файлы и папки которые не хотим добавлять в гит репозиторий нужно прописать в файле:
+.gitignore
+запись по типу:
+.idea/* - не хотим отслеживать папку ".idea"
+
+Сделать чтобы гит отслеживал файлы проэкта:
+git add --all
+
+Чтобы закомитить файлы (внести изменения в репозиторий) команда:
+git commit -m "Nowoe prohogdeniye"
+
+Подключить удаленный репозиторий:
+git remote add newphp2-less1 https://github.com/salamanka22/php2-lesson1.git
+git remote add newphp2-less1 https://github.com/sitesoft1/newphp2-less1.git
+
+посмотреть какие удаленные репозитории подключены:
+git remote
+
+Залить файлы в репозиторий (основную ветку):
+git push newphp2-less1 master
+
+после чего ввести имя пользователя и пароль!
+
+Не обязательно:
+Создать отдельную версию
+git tag "version 2.0"
+
+git branch secondBranch
+
+Смотрим какие есть ветки:
+git branch
+
+Переключится на другую ветку:
+git checkout secondBranch
+
+Залить файлы в новую ветку:
+git push php2-less1 secondBranch
+
+Слить ветку на которой сейчас мы находимся с указанной веткой:
+git merge secondBranch
+
+Удалить ветку:
+git branch -D secondBranch
+
+
