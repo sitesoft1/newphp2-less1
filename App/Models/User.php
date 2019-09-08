@@ -3,16 +3,10 @@
 
 namespace App\Models;
 use App\Db;
+use App\Model;
 
-class User
+class User extends Model
 {
-   
-    public static function findAll()
-    {
-        $db = new Db();
-        return $db->query(
-            'SELECT * FROM persons',
-            'App\Models\User'
-        );
-    }
+   const TABLE = 'persons';
+
 }
