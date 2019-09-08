@@ -1,6 +1,6 @@
 <?php
 require __DIR__ . '/autoload.php';
 
-$db = new \App\Db();
-$res = $db->execute('CREATE TABLE foo (id SERIAL)');
+//$user = new App\Models\User();
+$res = \App\Models\User::findAll();
 var_dump($res);
